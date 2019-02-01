@@ -24,4 +24,6 @@ export default async (url, params = {}, method = 'POST', isUpload = false) => {
     const res = await axios.post(url, params, isUpload ? upload : normal)
     return res.data
   }
+
+  // 请自行添加其它方法
 }
