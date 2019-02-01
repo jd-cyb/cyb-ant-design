@@ -10,10 +10,13 @@
 * 集成异步编程及数据处理的最佳实践。
 * 集成Mock数据和联调方案的最佳实践。
 
-## 使用
+## 快速开始
 
 ```
-npm install
+# 安装
+npm install # 或者: yarn install
+
+# 开始
 npm start
 ```
 
