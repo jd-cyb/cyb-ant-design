@@ -10,18 +10,16 @@
 * 集成异步编程及数据处理的最佳实践。
 * 集成Mock数据和联调方案的最佳实践。
 
-## 开发
+## 使用
 
 ```
-git clone https://github.com/jd-cyb/cyb-ant-design.git
-cd cyb-ant-design
 npm install
 npm start
 ```
 
 ## More
 
-更多命令功能请参考 `package.json` 文件中 `scripts`。
+更多命令功能请参考 `package.json` 的 `scripts`。
 
 ## License
 
