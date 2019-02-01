@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2">
+            <g id="FEZ-UI-Copy">
+                <g id="Group">
+                    <g id="Group-3-Copy-2" fill="#3798FF">
+                        <path d="M27,17.8320874 C29.3068849,18.8400082 31.1599918,20.6931151 32.1679126,23 L33,23 C33,23.6849317 32.9311395,24.3537801 32.7999638,25 C32.9311395,25.6462199 33,26.3150683 33,27 L32.1679126,27 C31.1599918,29.3068849 29.3068849,31.1599918 27,32.1679126 L27,33 C26.3150683,33 25.6462199,32.9311395 25,32.7999638 C24.3537801,32.9311395 23.6849317,33 23,33 L23,32.1679126 C20.6931151,31.1599918 18.8400082,29.3068849 17.8320874,27 L17,27 C17,26.3150683 17.0688605,25.6462199 17.2000362,25 C17.0688605,24.3537801 17,23.6849317 17,23 L17.8320874,23 C18.8400082,20.6931151 20.6931151,18.8400082 23,17.8320874 L23,17 C23.6849317,17 24.3537801,17.0688605 25,17.2000362 C25.6462199,17.0688605 26.3150683,17 27,17 L27,17.8320874 Z M40,40 L40,30 L50,30 C50,35.5228475 45.5228475,40 40,40 Z M30,10 L30,0 C35.5228475,0 40,4.4771525 40,10 L30,10 Z M20,10 L10,10 C10,4.4771525 14.4771525,0 20,0 L20,10 Z M10,20 L0,20 C0,14.4771525 4.4771525,10 10,10 L10,20 Z M40,20 L40,10 C45.5228475,10 50,14.4771525 50,20 L40,20 Z M6.123234e-16,30 L10,30 L10,40 C4.4771525,40 1.28867715e-15,35.5228475 6.123234e-16,30 Z M20,40 L20,50 C14.4771525,50 10,45.5228475 10,40 L20,40 Z M30,40 L40,40 C40,45.5228475 35.5228475,50 30,50 L30,40 Z" id="Combined-Shape"></path>
+                    </g>
+                    <g id="Group-3-Copy" fill="#79BAFF">
+                        <rect id="Combined-Shape" x="10" y="30" width="10" height="10"></rect>
+                        <rect id="Combined-Shape" x="30" y="30" width="10" height="10"></rect>
+                        <rect id="Combined-Shape" x="30" y="10" width="10" height="10"></rect>
+                        <rect id="Combined-Shape" x="10" y="10" width="10" height="10"></rect>
+                        <rect id="Combined-Shape" x="20" y="0" width="10" height="10"></rect>
+                        <rect id="Combined-Shape" x="20" y="40" width="10" height="10"></rect>
+                        <rect id="Combined-Shape" x="40" y="20" width="10" height="10"></rect>
+                        <rect id="Combined-Shape" x="0" y="20" width="10" height="10"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
