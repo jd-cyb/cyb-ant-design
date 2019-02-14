@@ -28,7 +28,7 @@ const links = [
 
 const copyright = (
   <Fragment>
-    Copyright <Icon type="copyright" /> 2018 塞伯坦前端架构组
+    Copyright <Icon type="copyright" /> 2019 塞伯坦前端架构组
   </Fragment>
 )
 

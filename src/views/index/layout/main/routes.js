@@ -1,9 +1,9 @@
 import Loadable from '@/components/loadable'
 
 const Dashboard = Loadable(() => import('./pages/dashboard'))
-const basicForm = Loadable(() => import('./pages/forms/basic-form'))
-const stepForm = Loadable(() => import('./pages/forms/step-form'))
-const basicTable = Loadable(() => import('./pages/table/basic-table'))
+const basicForm = Loadable(() => import('./pages/basic-form'))
+const stepForm = Loadable(() => import('./pages/step-form'))
+const basicTable = Loadable(() => import('./pages/basic-table'))
 const searchTable = Loadable(() => import('./pages/search-table'))
 
 const routes = [
