@@ -82,6 +82,7 @@ class BasicLayout extends React.Component {
 
   state = {
     isMobile,
+    sysName: 'JUI PC',
     ...config
   }
 
@@ -95,11 +96,6 @@ class BasicLayout extends React.Component {
 
   componentWillUnmount() {
     unenquireScreen(this.enquireHandler);
-  }
-
-  getPageTitle() {
-    let title = 'CYB Ant Design';
-    return title;
   }
 
   getLayoutStyle = () => {
@@ -144,7 +140,7 @@ class BasicLayout extends React.Component {
     const { collapsed } = this.props.Collapsed;
     const currentUser = JSON.parse(auth.getUserInfo());
 
-    const { isMobile, layout: StateLayout, navTheme, fixedHeader } = this.state;
+    const { isMobile, layout: StateLayout, navTheme, fixedHeader, sysName } = this.state;
 
     const isTop = StateLayout === 'topmenu';
     const contentStyle = !fixedHeader ? { paddingTop: 0 } : {};
@@ -176,6 +172,7 @@ class BasicLayout extends React.Component {
             handleMenuCollapse={this.handleMenuCollapse}
             handleMenuClick={this.handleMenuClick}
             logo={logo}
+            sysName={sysName}
             isMobile={isMobile}
             collapsed={collapsed}
             currentUser={currentUser}
@@ -213,7 +210,7 @@ class BasicLayout extends React.Component {
 
     return (
       <React.Fragment>
-        <DocumentTitle title={this.getPageTitle()}>
+        <DocumentTitle title={sysName}>
           <ContainerQuery query={query}>
             {params => <div className={classNames(params)}>{layout}</div>}
           </ContainerQuery>

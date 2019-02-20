@@ -12,7 +12,6 @@ const data = [
 
 export default class Analysis extends Component {
   componentDidMount() {
-    console.log(this.props)
   }
 
   render() {

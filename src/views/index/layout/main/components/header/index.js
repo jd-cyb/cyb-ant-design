@@ -84,7 +84,6 @@ export default class HeaderView extends Component {
   };
 
   render() {
-    console.log(this.props)
     const { isMobile, handleMenuCollapse,handleMenuClick, navTheme, layout, fixedHeader } = this.props;
     const { visible } = this.state;
     const isTop = layout === 'topmenu';

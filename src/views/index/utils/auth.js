@@ -7,7 +7,7 @@ export default {
    * @param {登录成功后的回调} callback
    */
   login(res, callback) {
-    Cookies.set('sid', res.sid);
+    Cookies.set('clientToken', res.clientToken);
     Cookies.set('userInfo', res.userInfo);
     if (callback) callback();
   },
@@ -16,14 +16,14 @@ export default {
    * 是否已登录
    */
   loggedIn() {
-    return !!Cookies.get('sid');
+    return !!Cookies.get('clientToken');
   },
 
   /**
    * 获取登录后的sessionID
    */
-  getSid() {
-    return Cookies.get('sid');
+  getToken() {
+    return Cookies.get('clientToken');
   },
 
   /**
@@ -38,7 +38,7 @@ export default {
    * @param {退出登录后的回调} cb
    */
   logout(cb) {
-    Cookies.remove('sid');
+    Cookies.remove('clientToken');
     Cookies.remove('userInfo');
     if (cb) cb()
   }

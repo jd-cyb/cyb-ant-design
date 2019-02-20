@@ -1,3 +1,7 @@
+/**
+ * 统一管理和封装HTTP请求
+ */
+
 import axios from './axios'
 import qs from 'qs'
 

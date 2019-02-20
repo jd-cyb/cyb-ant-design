@@ -1,3 +1,8 @@
+/**
+ * 懒加载组件
+ * 打包时自动分割打包成独立的文件，只在请求的时候加载
+ */
+
 import React from 'react'
 import Loadable from 'react-loadable'
 import NProgress from 'nprogress'

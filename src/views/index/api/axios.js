@@ -1,11 +1,16 @@
+/**
+ * axios 基础配置
+ */
+
 import axios from 'axios'
 // import auth from "@/utils/auth"
 
 axios.defaults.timeout = 5000
 axios.defaults.baseURL = 'http://localhost:3000'
+axios.defaults.withCredentials = true //发起请求携带cookie(CROS跨域需要服务端的支持)
 
-//将 sid 传回服务器可判断登录状态
-// axios.defaults.headers.common['sid'] = auth.getSid()
+// 将token传回服务器认证登录状态
+// axios.defaults.headers.common['clientToken'] = auth.getToken()
 
 //请求拦截
 axios.interceptors.request.use((config) => {

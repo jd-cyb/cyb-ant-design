@@ -1,3 +1,7 @@
+/**
+ * 权限登录控制组件
+ */
+
 import React from 'react'
 import { Route, Redirect, } from 'react-router-dom'
 

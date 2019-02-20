@@ -34,7 +34,7 @@ const database = Mock.mock({
   ],
 }).data
 
-export const basicTable= (req, res) => {
+export const basicTable = (req, res) => {
   const { query } = req
   let { pageSize, page, ...other } = query
   pageSize = pageSize || 10
@@ -59,6 +59,7 @@ export const basicTable= (req, res) => {
   res.status(200).json({
     data: newData.slice((page - 1) * pageSize, page * pageSize),
     total: newData.length,
+    sid: req.session.userToken
   })
 }
 

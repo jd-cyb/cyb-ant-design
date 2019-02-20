@@ -7,12 +7,6 @@
 
 
 module.exports = {
-  /**
-   * 启用/禁用 eslint 检测
-   */
-  eslint: {
-    available: false
-  },
   webpack: {
     lessLoader: {
       options: {
@@ -22,6 +16,7 @@ module.exports = {
     cssLoader: {
       options: {
         modules: true,
+        sourceMap: true,
         import: true,
         importLoaders: 2
       }

@@ -4,25 +4,33 @@ export const Login = (req, res) => {
     userName
   } = req.body;
   if (password === '888888' && userName === 'admin') {
+
+    const userInfo = {
+      "id": "155",
+      "avatar": 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png',
+      "name": "admin",
+      "nickName": "赵Sir",
+      "phone": "13811869208",
+      "age": 25,
+      "email": "furic@qq.com",
+      "createTime": "2018-11-21 15:37:12"
+    }
+
+    const userToken = userInfo.id + new Date()*1
+
+    req.session.userToken = userToken
+
+    req.session.cookie.maxAge = 10 * 24 * 60 * 60 * 1000
+
     res.send({
       errno: 0,
       msg: '',
       data: {
-        "userInfo": {
-          "id": "355",
-          avatar: 'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png',
-          "name": "furic",
-          "nickName": "赵Sir",
-          "phone": "13811869208",
-          "age": 74,
-          "isMale": false,
-          "email": "furic@qq.com",
-          "createTime": "2018-11-21 15:37:12"
-        },
-        "sid": "355235239534235"
+        "userInfo": userInfo,
+        "clientToken": userToken
       }
-    });
-    return;
+    })
+    return
   }
   res.send({
     errno: 401,

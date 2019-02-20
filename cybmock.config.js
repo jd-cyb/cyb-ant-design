@@ -3,7 +3,7 @@ import { searchTable } from './mock/search-table'
 import { Login } from './mock/login'
 
 
-module.exports = {
+export default {
   'GET /api/basic-table': basicTable,
   'POST /api/login': Login,
   'GET /api/search-table': searchTable

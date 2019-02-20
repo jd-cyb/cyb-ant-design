@@ -1,3 +1,7 @@
+/**
+ * 集中管理请求接口
+ */
+
 import fetch from './request'
 
 // 登录

@@ -53,7 +53,7 @@ export default class SiderMenu extends PureComponent {
   };
 
   render() {
-    const { logo, collapsed, onCollapse, fixSiderbar, theme, isMobile } = this.props;
+    const { logo, sysName, collapsed, onCollapse, fixSiderbar, theme, isMobile } = this.props;
     const { openKeys } = this.state;
     const defaultProps = collapsed ? {} : { openKeys };
 
@@ -79,17 +79,17 @@ export default class SiderMenu extends PureComponent {
         <div className={styles.logo} id="logo">
           <Link to="/">
             <img src={logo} alt="logo" />
-            <h1>CYB Ant Design</h1>
+            <h1>{sysName}</h1>
           </Link>
         </div>
-          <BaseMenu
-            {...this.props}
-            mode="inline"
-            handleOpenChange={this.handleOpenChange}
-            onOpenChange={this.handleOpenChange}
-            style={{ padding: '16px 0', width: '100%' }}
-            {...defaultProps}
-          />
+        <BaseMenu
+          {...this.props}
+          mode="inline"
+          handleOpenChange={this.handleOpenChange}
+          onOpenChange={this.handleOpenChange}
+          style={{ padding: '16px 0', width: '100%' }}
+          {...defaultProps}
+        />
       </Sider>
     );
   }
